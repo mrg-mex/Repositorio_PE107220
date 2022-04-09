@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addOn>
+  <identifier>d18e872e-c0b0-40a2-99c9-e07e6dfa85b1</identifier>
+  <displayType>Collection</displayType>
+  <translatedDisplayType>
+    <en_US>Collection</en_US>
+    <ja_JP>コレクション</ja_JP>
+    <ko_KR>컬렉션</ko_KR>
+    <zh_CN>集合</zh_CN>
+  </translatedDisplayType>
+  <name>Dynamixel Simulink Library</name>
+  <author>Jeihun Lee</author>
+  <version>1.0.0.0</version>
+  <downloadUrl>https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/61944/versions/2/download/zip?src=addons_ml_desktop_install&amp;profile_id=15525857&amp;license=40816183&amp;release_family=R2020b</downloadUrl>
+  <licenseUrl>https://addons.mathworks.com/registry/v1/d18e872e-c0b0-40a2-99c9-e07e6dfa85b1/1.0.0.0/-/license</licenseUrl>
+  <previewImageUrl>https://www.mathworks.com/responsive_image/160/120/0/0/0/cache/matlabcentral/images/default_screenshot.jpg</previewImageUrl>
+  <releaseNotesUrl>https://www.mathworks.com/add-ons/d18e872e-c0b0-40a2-99c9-e07e6dfa85b1/a7b0f34d-0854-9b4f-4a82-2219766a8668/releaseNotes</releaseNotesUrl>
+  <installationFolder>Collections</installationFolder>
+</addOn>
