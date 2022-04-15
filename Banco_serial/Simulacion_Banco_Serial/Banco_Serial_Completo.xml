@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/08/22||23:29:45" using="Simscape Multibody Link Version 7.4" from="SolidWorks 28.1.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Banco_Serial_Completo" uid="Banco_Serial_Completo" version="128">
+<AssemblyFile name="Banco_Serial_Completo.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Eslabón_1-1" uid="Eslabón_1-1" entityUid="Eslabón_1*:*Predeterminado">
+<Transform>
+<Rotation>0 -3.0531133177191805e-16 0.99999999999999989 0 0.99999999999999989 3.0531133177191805e-16 -1 0 0</Rotation>
+<Translation>-0.011471725132938702 -0.0013798386222333018 0.099570228229417093</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper_pieza-1" uid="Gripper_pieza-1" entityUid="Gripper_pieza*:*Predeterminado">
+<Transform>
+<Rotation>2.3515642821681178e-16 0.99999999999999989 -1.1102230246251565e-16 -0.99999999999999989 2.3515642821681134e-16 -2.505373795169342e-15 -2.5053737951693416e-15 1.1102230246251565e-16 0.99999999999999978</Rotation>
+<Translation>0.085763381346054282 -0.0041779454899677103 0.22229064796527304</Translation>
+</Transform>
+</Instance>
+<Instance name="Base_ensamble-1" uid="Base_ensamble-1" grounded="true" entityUid="Base_ensamble*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.013479958621014251 0.0032343622825254945 -0.0057093520347084037</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabón_2-1" uid="Eslabón_2-1" entityUid="Eslabón_2*:*Predeterminado">
+<Transform>
+<Rotation>1.4664471494979797e-16 0.99999999999999978 0 -1 1.4664471494979792e-16 -2.3893123092893047e-15 -2.3893123092893047e-15 0 0.99999999999999978</Rotation>
+<Translation>0.077781955601134878 -0.022942735198078917 0.053890647965273319</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabón_3-1" uid="Eslabón_3-1" entityUid="Eslabón_3*:*Predeterminado">
+<Transform>
+<Rotation>-2.2851452125707245e-16 -1 3.8857805861880479e-16 1 -2.4646870675550554e-16 -2.3758831573212951e-15 2.3780981155161778e-15 4.4408920985006262e-16 1</Rotation>
+<Translation>0.080885134640416564 -0.024086946801351466 0.12439064796527323</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concéntrica1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Base_ensamble-1</Uid>
+</InstancePath>
+<Position>0.022048367784867382 -0.0041852561830587123 0.12849999999998171</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eslabón_1-1</Uid>
+</InstancePath>
+<Position>-0.026220419735856218 0.00042894472170006864 0.047000051538820309</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Base_ensamble-1</Uid>
+</InstancePath>
+<Position>0.033046589321057376 0.0072308528285051901 0.12849999999998171</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eslabón_1-1</Uid>
+</InstancePath>
+<Position>-0.023220419735856215 0.012929944721703864 0.066758410851700312</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Eslabón_1-1</Uid>
+</InstancePath>
+<Position>-0.027220419735856191 -0.020571055278300103 0.08850005153882029</Position>
+<Axis>-2.4006266968161743e-15 0.99999999999999989 2.3252728094371189e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eslabón_2-1</Uid>
+</InstancePath>
+<Position>-0.0009918412975457036 -0.00075362919525324978 0.072899999999999951</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eslabón_1-1</Uid>
+</InstancePath>
+<Position>-0.038218641272046203 -0.020571055278300131 0.077083942527256394</Position>
+<Axis>2.4006266968161743e-15 -0.99999999999999989 -2.3252728094371189e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eslabón_2-1</Uid>
+</InstancePath>
+<Position>-0.0009918412975457036 -0.013254629195253248 0.092658359312879954</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincidente3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eslabón_2-1</Uid>
+</InstancePath>
+<Position>0.042008158702454279 -0.012169738206817174 0.15439822153618993</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eslabón_3-1</Uid>
+</InstancePath>
+<Position>-0.040863947099181896 0.016357808234538807 0.092658359312879982</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Eslabón_2-1</Uid>
+</InstancePath>
+<Position>0.042008158702454279 -0.00075362919525327754 0.14339999999999992</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eslabón_3-1</Uid>
+</InstancePath>
+<Position>-0.043863947099181871 0.0038568082345350058 0.072900000000000006</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eslabón_3-1</Uid>
+</InstancePath>
+<Position>0.044136052900818082 -0.0075593007770288767 0.15439822153618998</Position>
+<Axis>1 0 1.6414795370947334e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Gripper_pieza-1</Uid>
+</InstancePath>
+<Position>-0.024227051589434095 0.0057659450598273043 0.091258359312880455</Position>
+<Axis>0.99999999999999989 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Eslabón_3-1</Uid>
+</InstancePath>
+<Position>0.044136052900818096 0.0038568082345350335 0.14339999999999997</Position>
+<Axis>-1 0 -1.6414795370947334e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Gripper_pieza-1</Uid>
+</InstancePath>
+<Position>-0.027227051589434097 -0.0087350549401727096 0.045500000000000262</Position>
+<Axis>0.99999999999999989 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Base_ensamble" uid="Base_ensamble*:*Predeterminado" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base_ensamble.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.13033755817510814</Mass>
+<CenterOfMass>-0.011213766498768761 -0.004175751689795483 0.10205295328042371</CenterOfMass>
+<Inertia>5.0104557151360163e-05 8.9485467397513096e-05 7.9486454366272001e-05 -7.7066117836537012e-09 -8.1272352581569498e-06 -1.4260397700360764e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Base_ensamble_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabón_1" uid="Eslabón_1*:*Predeterminado" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Eslabón_1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.066580321406431012</Mass>
+<CenterOfMass>-0.0077530192795566936 -0.00026004198182379672 0.08644516907458423</CenterOfMass>
+<Inertia>1.666219961460743e-05 2.9812322933680951e-05 2.4779174086713403e-05 9.2080724934949019e-08 1.037532235030534e-06 -4.1365247269412224e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabón_1_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabón_2" uid="Eslabón_2*:*Predeterminado" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Eslabón_2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.060723712032044123</Mass>
+<CenterOfMass>0.013963744754757687 -0.00077531655364549595 0.12020271169829072</CenterOfMass>
+<Inertia>2.8523926887678715e-05 4.9720292851241492e-05 2.8083725137119142e-05 4.2782229367117143e-09 -1.3913783268416607e-05 1.1720259034357407e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabón_2_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabón_3" uid="Eslabón_3*:*Predeterminado" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Eslabón_3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.06072371203204411</Mass>
+<CenterOfMass>0.0160916389531215 0.0038351208761427643 0.12020271169829072</CenterOfMass>
+<Inertia>2.8523926887678712e-05 4.9720292851241492e-05 2.8083725137119142e-05 4.2782229367017741e-09 -1.3913783268416608e-05 1.1720259034352131e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabón_3_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Gripper_pieza" uid="Gripper_pieza*:*Predeterminado" version="122">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Gripper_pieza.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.13486402080508164</Mass>
+<CenterOfMass>-0.0030403150215139187 0.004766209096994563 0.11744146318602508</CenterOfMass>
+<Inertia>9.3257821465334576e-05 8.5489727546585051e-05 4.9902338109116304e-05 -5.3845938872916593e-06 -8.257197073037474e-07 1.4835046673283557e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Gripper_pieza_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
